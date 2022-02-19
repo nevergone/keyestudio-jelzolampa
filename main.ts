@@ -30,6 +30,10 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let index = 0
-basic.clearScreen()
 index = 0
+pins.digitalWritePin(DigitalPin.P0, 1)
+pins.digitalWritePin(DigitalPin.P1, 0)
+pins.digitalWritePin(DigitalPin.P2, 0)
 pins.servoWritePin(AnalogPin.P8, 0)
+basic.clearScreen()
+basic.showString("P")
