@@ -37,3 +37,4 @@ pins.digitalWritePin(DigitalPin.P2, 0)
 pins.servoWritePin(AnalogPin.P8, 0)
 basic.clearScreen()
 basic.showString("P")
+index += 2
