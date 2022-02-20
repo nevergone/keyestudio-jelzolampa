@@ -8,7 +8,7 @@ function sarga_lampa () {
     basic.clearScreen()
     pins.digitalWritePin(DigitalPin.P1, 0)
 }
-input.onButtonPressed(Button.A, function () {
+function jelzőlámpa () {
     if (index == 0) {
         sarga_lampa()
         pins.digitalWritePin(DigitalPin.P0, 1)
@@ -28,6 +28,12 @@ input.onButtonPressed(Button.A, function () {
     if (index >= 3) {
         index = 0
     }
+}
+input.onButtonPressed(Button.A, function () {
+    jelzőlámpa()
+})
+input.onButtonPressed(Button.B, function () {
+    jelzőlámpa()
 })
 let index = 0
 index = 0
